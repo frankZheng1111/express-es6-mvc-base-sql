@@ -1,0 +1,13 @@
+# 依赖
+node_modules/
+
+# 编译文件
+build
+
+# 日志
+*.log
+
+# 测试覆盖
+coverage/
+
+

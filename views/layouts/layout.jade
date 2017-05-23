@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title #{"Demo Page"}
+    script(src='//cdn.bootcss.com/jquery/1.11.3/jquery.min.js')
+    script(src='//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js')
+    link(rel='stylesheet', href='//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  block header
+  body
+    .container
+      .row
+        .col-lg-10.col-lg-offset-1
+          block content
+  block footer

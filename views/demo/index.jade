@@ -1,0 +1,33 @@
+extend ../layouts/layout
+
+block content
+  .panel.panel-primary
+    .panel-heading
+      h1.panel-title Show Jade Base Feature:
+    .panel-body
+      h4.alert.alert-success(id=`test${demoId}`) Show valriables passed from routes(controller):  #{demo} - #{demoId}
+      h4.alert.alert-warning show use components:
+      include components/list.jade
+      + list(['Show string;', 'And;', 'Hide Number;', 1, 2, 3])
+    .panel-footer
+
+  .panel.panel-success
+    .panel-heading
+      h1.panel-title Show POST API
+    .panel-body
+      button.btn.btn-primary.post-api send ajax requestand show alert response
+    .panel-footer
+
+  style.
+    .panel {
+      margin: 10%
+    }
+    button {
+      width: 100%;
+    }
+  script(type='text/javascript').
+    $(function() {
+      $('.post-api').click(function() {
+        $.post('/demo', { message: 'post-api-demo' }, function(data) { alert(JSON.stringify(data)); });
+      });
+    });

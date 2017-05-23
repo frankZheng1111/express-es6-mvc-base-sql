@@ -1,0 +1,11 @@
+mixin list(rows)
+  .component
+    .panel.panel-success
+      .panel-heading
+        h1.panel-title show iterator(each) and judge(if):
+      .panel-body
+        - each row in rows
+          - if (typeof row === 'string')
+            h5.alert.alert-info #{row}
+      .panel-footer
+

@@ -1,0 +1,12 @@
+{
+  "test": {
+    "secret": "replace your secret",
+    "key": "replace your key",
+    "maxAge": 86400000
+  },
+  "dev": {
+    "secret": "replace your secret",
+    "key": "replace your key",
+    "maxAge": 86400000
+  }
+}

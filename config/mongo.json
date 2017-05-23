@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "address": "mongodb://localhost:27017/replace-your-name-space"
+  },
+  "test": {
+    "address": "mongodb://localhost:27017/replace-your-name-space"
+  }
+}
